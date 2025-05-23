@@ -20,4 +20,13 @@ console.log(nombre); // Acceder a la propiedad nombre
 console.log(precio); // Acceder a la propiedad precio
 console.log(disponible); // Acceder a la propiedad disponible
 
+// Oject literal enhancement
+const autenticado = true;
+const usuario = 'Juan';
 
+const nuevoObjeto = {
+    autenticado,
+    usuario
+}
+
+console.log(nuevoObjeto); // {autenticado: true, usuario: "Juan"
