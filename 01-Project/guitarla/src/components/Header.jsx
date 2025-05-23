@@ -1,10 +1,12 @@
 
 export default function Header(){
     
-    
+    const name = 'Juan';
+    const total = 100;
     return(
-    <h1>Desde header</h1>
-    
-
+        <>
+            <p>Total a pagar: {total}</p>
+            <p>Nombre: {name}</p>
+        </>
     )
 }
