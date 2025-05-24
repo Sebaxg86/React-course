@@ -4,8 +4,6 @@ import Guitar from "./components/Guitar.jsx"
 
 function App() {
 
-    //State
-    const [auth, setAuth] = useState(false);
 
     return (
     <>
