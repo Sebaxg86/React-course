@@ -4,7 +4,8 @@ import Guitar from "./components/Guitar.jsx"
 import { db } from './data/db'
 
 function App() {
-    const [data, setData] = useState([db]);
+
+    const [data, setData] = useState(db);
 
     return (
     <>
@@ -15,11 +16,10 @@ function App() {
         <h2 className="text-center">Nuestra Colección</h2>
 
         <div className="row mt-5">
-            {data.map(() => (
+            {data.map((guitar) => (
                 <Guitar 
-                    price={100}
-                    auth={true}
-                
+                    key={guitar.id}
+                    guitar={guitar}
                 />
             ))}
         </div>
