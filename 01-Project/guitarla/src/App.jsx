@@ -12,9 +12,13 @@ function App() {
 
         const itemExists = cart.findIndex((guitar) => guitar.id === item.id);
         
-        console.log(itemExists);
+        if(itemExists >= 0){ //Existe en el carrito
+            console.log('Ya existe');
+        }else{
+            item.quantity = 1;
+            setCart([...cart, item]);
+        }
 
-        setCart(prevCart => [...prevCart, item]);
 
     }
 
