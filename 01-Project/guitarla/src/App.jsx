@@ -1,13 +1,10 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Header from "./components/Header.jsx"
 import Guitar from "./components/Guitar.jsx"
+import { db } from './data/db'
 
 function App() {
-    const [auth, setAuth] = useState(false);
-    
-    useEffect(() => {
-        console.log('Componente listo')
-    }, [auth]);
+    const [data, setData] = useState([db]);
 
     return (
     <>
